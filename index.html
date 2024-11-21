@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon2.png ">
+    <link rel="stylesheet" href="css.css">
+    <title>JuegoOnline</title>
+</head>
+<body>
+    <script>
+        // Selección del audio
+        const audio = document.getElementById('audioFondo');
+        const playButton = document.getElementById('playAudio');
+
+        // Ajustar el volumen
+        audio.volume = 1; // Máximo permitido
+
+        // Intentar reproducir automáticamente
+        audio.play().catch(() => {
+            // Si la reproducción automática falla, muestra el botón
+            playButton.style.display = 'block';
+        });
+
+        // Reproducir audio al hacer clic en el botón
+        playButton.addEventListener('click', () => {
+            audio.play();
+            playButton.style.display = 'none'; // Ocultar el botón
+        });
+    </script>
+
+    <header>
+        <h1>Hanged</h1>
+        <h2>ALEATORIO</br>
+        (Contiene 10 letras).</h2>
+    </header>
+    <main>
+        <img id="imagen" src="img/img1.png.png" alt="Ahorcado">
+        <div class="container_p">
+            <p id="palabra_a_adivinar">
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+            </p>
+        </div>
+        <div class="letras">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+            <button>E</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>I</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>M</button>
+            <button>N</button>
+            <button>Ñ</button>
+            <button>O</button>
+            <button>P</button>
+            <button>Q</button>
+            <button>R</button>
+            <button>S</button>
+            <button>T</button>
+            <button>U</button>
+            <button>X</button>
+            <button>Y</button>
+            <button>v</button>
+            <button>W</button>
+            <button>Z</button>
+        </div>
+            <img id="reiniciar" src="img/flechaFinal.png" alt="">
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
