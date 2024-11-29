@@ -3,84 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon2.png ">
+    <title>play hangman</title>
     <link rel="stylesheet" href="css.css">
-    <title>JuegoOnline</title>
+    <link rel="icon" href="img/favicon1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script>
-        // Selección del audio
-        const audio = document.getElementById('audioFondo');
-        const playButton = document.getElementById('playAudio');
+    <section id="section1">
+        <header id="head1" >
+            <h1 id="title">HANGED</h1>
+        </header>
 
-        // Ajustar el volumen
-        audio.volume = 1; // Máximo permitido
+        <main id="main1">
+            <img id="img_principal" src="img/fonddo.png" alt="img">
+        </main>
 
-        // Intentar reproducir automáticamente
-        audio.play().catch(() => {
-            // Si la reproducción automática falla, muestra el botón
-            playButton.style.display = 'block';
-        });
+        <footer id="footer1">
+            <button id="button1">
+                <h2>START <img src="img/jugar (1).png" alt=""> </h1>
+            </button>
+        </footer>
+    </section>
 
-        // Reproducir audio al hacer clic en el botón
-        playButton.addEventListener('click', () => {
-            audio.play();
-            playButton.style.display = 'none'; // Ocultar el botón
-        });
-    </script>
+    <section id="section2">
+        <header id="header2">
+            <h2 id="titlecat">
+                Categorias
+            </h2>
+        </header>
 
-    <header>
-        <h1>Hanged</h1>
-        <h2>ALEATORIO</br>
-        (Contiene 10 letras).</h2>
-    </header>
-    <main>
-        <img id="imagen" src="img/img1.png.png" alt="Ahorcado">
-        <div class="container_p">
-            <p id="palabra_a_adivinar">
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-                <span>_</span>
-            </p>
-        </div>
-        <div class="letras">
-            <button>A</button>
-            <button>B</button>
-            <button>C</button>
-            <button>D</button>
-            <button>E</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>I</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
-            <button>M</button>
-            <button>N</button>
-            <button>Ñ</button>
-            <button>O</button>
-            <button>P</button>
-            <button>Q</button>
-            <button>R</button>
-            <button>S</button>
-            <button>T</button>
-            <button>U</button>
-            <button>X</button>
-            <button>Y</button>
-            <button>v</button>
-            <button>W</button>
-            <button>Z</button>
-        </div>
-            <img id="reiniciar" src="img/flechaFinal.png" alt="">
-    </main>
+        <main id="main2">
+            <button class="btn_categorias" id="btn_aleatorio">
+              <h3>
+                ALEATORIO <img class="button-img" src="img/aleatorio.png" alt="">
+             </h3>  
+            </button id="btn_categorias">
+            <button class="btn_categorias" id="btn_informatica">
+                <h3 class="btn-title">
+                    INFORMATICA <img class="button-img" src="img/ingeniero.png" alt="">
+                </h3>
+            </button>
+            <button class="btn_categorias" id="btn_deporte">
+                <h3 id="btn-title">
+                    DEPORTE <img class="button-img" src="img/deportes-con-balones.png" alt="">
+                </h3>
+            </button>
+            <button class="btn_categorias" id="btn_musica">
+                <h3 id="btn-title">
+                    MUSICA <img class="button-img" src="img/nota-musical.png" alt="">
+                </h3>
+            </button>
+        </main>
+
+        <footer>
+            <button id="iniciar">
+                <h1>
+                    PLAY
+                </h1>
+            </button>
+        </footer>
+    </section>
+
+    <section id="section3">
+       
+        <main id="main3">
+            <img id="img-play" src="img/img1.png.png" alt="">
+            <div>
+                <p id="palabra_a_adivinar">
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                    <span>_</span>
+                </p>
+            </div>
+            <div class="letras">
+                <button id="abc">A</button>
+                <button id="abc">B</button>
+                <button id="abc">C</button>
+                <button id="abc">D</button>
+                <button id="abc">E</button>
+                <button id="abc">F</button>
+                <button id="abc">G</button>
+                <button id="abc">H</button>
+                <button id="abc">I</button>
+                <button id="abc">J</button>
+                <button id="abc">K</button>
+                <button id="abc">L</button>
+                <button id="abc">M</button>
+                <button id="abc">N</button>
+                <button id="abc">Ñ</button>
+                <button id="abc">O</button>
+                <button id="abc">P</button>
+                <button id="abc">Q</button>
+                <button id="abc">R</button>
+                <button id="abc">S</button>
+                <button id="abc">T</button>
+                <button id="abc">U</button>
+                <button id="abc">X</button>
+                <button id="abc">Y</button>
+                <button id="abc">v</button>
+                <button id="abc">W</button>
+                <button id="abc">Z</button>
+            </div>
+        </main>
+    </section>
+
+    <section id="section4">
+        <header id="header4">
+            <p id=""></p>
+        </header>
+        <h1>
+            ¡ADIVINASTE!</br>
+            ¡Felicitaciones!
+        </h1>
+        <button id="iniciarg">
+            <h4>
+                Volver a intentar <img class="img-reintentar" src="img/flechaFinal.png" alt="">
+            </h4>
+        </button>
+    </section>
+
+    <section id="section5">
+        <header id="header4">
+            <p id="palabra_a_adivinar"></p>
+        </header>
+        <h5>
+            PERDISTE!</br>
+            suerte en la proxima😞
+        </h5>
+        <button id="iniciarP">
+            <h5>
+                Volver a intentar <img class="img-reintentarP" src="img/flechaFinal.png" alt="">
+            </h5>
+        </button>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
